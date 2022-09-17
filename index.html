@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ec220ee989.js" crossorigin="anonymous"></script>
+    <title>Books Library - Web App</title>
+</head>
+
+<body>
+    <!-- Creating the navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>My Library</h1>
+        </div>
+        <div class="search" id="search">
+            <input type="text" placeholder="Search Books">
+            <button class="btn" id="searchBtn">Search</button>
+        </div>
+    </nav>
+
+    <div class="msgShow" id="msgShow">
+        </div>
+    </div>
+
+    <!-- Creating the Library -->
+    <div class="container">
+        <div class="content">
+            <div class="heading">
+                <h1>My Library</h1>
+            </div>
+            <form class="form" id="form">
+                <div class="name">
+                    Book Name <input id = "bookName" type="text">
+                </div>
+                <div class="author">
+                    Author <input id = "authorName" type="text">
+                </div>
+                <div class="flex">
+                    <label for="type">Type</label>
+                    <div class="radio">
+                        <input id = "fiction" type="radio" value="Fiction" name="grpName"> &nbsp;Fiction <br>
+                        <input id = "programming" type="radio" value="Programming" name="grpName"> &nbsp;Programming <br>
+                        <input id = "cooking" type="radio" value="Cooking" name="grpName"> &nbsp;Cooking<br>
+                        <input id = "technology" type="radio" value="Technology" name="grpName"> &nbsp;Tech<br>
+                        <input id = "science" type="radio" value="Science" name="grpName"> &nbsp;Science
+                    </div>
+                </div>
+                <button class="btn addBtn" id="addBtn">Add Book</button>
+                <!-- <button class="btn addBtn" id="delBtn">Delete Book</button> -->
+            </form>
+
+            <!-- Creating Display to show books -->
+            <div class="heading newHeading">
+                <h1>Your Books</h1>
+            </div>
+
+            <table>
+                <tr id="bg-color">
+                    <th scope="col">Name</th>
+                    <th scope="col">Author</th>
+                    <th scope="col">Type</th>
+                </tr>
+                <tbody id="tableBody"></tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="/index.js"></script>
+</body>
+
+</html>
